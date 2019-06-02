@@ -1,0 +1,17 @@
+/*html标签默认样式*/
+div,ol, p, ul,form,dd,dl, dt{display: block;}
+del{text-decoration: line-through;}
+table{ display: table }
+tr{ display:table-row }
+thead{ display:table-header-group }
+tbody{ display:table-row-group }
+tfoot{ display:table-footer-group }
+col{ display:table-column }
+colgroup{ display:table-column-group }
+td, th{ display: table-cell;}
+caption{ display: table-caption }
+th{font-weight: bolder; text-align: center }
+caption{ text-align: center }
+table{ border-spacing: 2px;}
+thead, tbody,tfoot { vertical-align:middle }
+td, th { vertical-align:inherit }

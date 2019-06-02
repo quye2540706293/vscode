@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="#" />
+    <style>
+      * {
+        margin: 0px 0px;
+        padding: 0px 0px;
+      }
+      body {
+        margin: 0px auto;
+      }
+      .nav {
+        width: 1200px;
+        height: 50px;
+        border: 0.1px solid red;
+        margin: 0px auto;
+      }
+      .nav ul {
+        width: 600px;
+        height: 50px;
+        margin: 0px auto;
+      }
+      .nav ul a {
+        width: 100px;
+        height: 50px;
+        float: left;
+        text-decoration: none;
+      }
+      .nav ul li {
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+        color: red;
+        list-style: none;
+      }
+
+      .nav dl {
+        width: ;
+        height: 50px;
+      }
+
+      .nav dl dt {
+        float: left;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+        color: red;
+        list-style: none;
+      }
+      .nav dl dd{display: none;}
+      dt :hover dd{display: block}
+
+      .nav_2 {
+        width: 1200px;
+        height: 50px;
+        margin: 0 auto;
+      }
+      .nav_2 ul {
+        width: 600px;
+        height: 50px;
+        margin-right: 0px;
+        margin-left: auto;
+      }
+      .nav_2 ul li {
+        float: right;
+        height: 50px;
+        width: 100px;
+        list-style: none;
+      }
+      .nav_2 ul a {
+        display: block;
+        width: 100px;
+        height: 50px;
+        background: rgba(118, 118, 241, 0.658);
+        text-decoration: none;
+        font-size: 26px;
+        color: yellow;
+        line-height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <a href=""><li>第一级</li></a
+        ><a href=""><li>第一级</li></a
+        ><a href=""><li>第一级</li></a
+        ><a href=""><li>第一级</li></a
+        ><a href=""><li>第一级</li></a
+        ><a href=""><li>第一级</li></a>
+      </ul>
+      <dl>
+        <dt>1</dt>
+        <dd>2</dd>
+        <dd>2</dd>
+        <dd>2</dd>
+
+        <dt>1</dt>
+        <dd>2</dd>
+        <dd>2</dd>
+        <dd>2</dd>
+        <dt>1</dt>
+        <dd>2</dd>
+        <dd>2</dd>
+        <dd>2</dd>
+        <dt>1</dt>
+        <dd>2</dd>
+        <dd>2</dd>
+        <dd>2</dd>
+      </dl>
+    </div>
+    <div class="nav_2">
+      <ul>
+        <li><a href="">第一级</a></li>
+        <li><a href="">第一级</a></li>
+        <li><a href="">第一级</a></li>
+        <li><a href="">第一级</a></li>
+        <li><a href="">第一级</a></li>
+        <li><a href="">第一级</a></li>
+      </ul>
+    </div>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <script src="" async defer></script>
+  </body>
+</html>

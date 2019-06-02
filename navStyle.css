@@ -1,0 +1,72 @@
+
+ body {
+    background-color: #f5f5f5;
+    color: #555;
+    font-size: 1.1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .container {
+    margin: 40px auto;
+    max-width: 700px;
+    text-align: center;
+  }
+  
+  /*第一层的导航栏由此ul组成*/
+  ul {
+    text-align: left;
+    display: inline-block;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  /*这里定义了导航栏菜单的样式*/
+  .menu li {
+    float: left;
+    padding: 0.65em 1em; /*用padding来撑出大小*/
+    border: 1px solid #eee; /*用白色的描边来从视觉上将每个li隔开（实际上是连在一起没有间隔的）*/
+    background-color: black;
+    color: white;
+    cursor: pointer; /*鼠标移动到菜单上会变成小手*/
+    -webkit-transition: all 0.3s; /*动画的过度时间*/
+    transition: all 0.3s; /*动画的过度时间*/
+    position: relative; /*相对定位（用于二级菜单的定位）*/
+  }
+  
+  /*当鼠标选中菜单的时候会变色*/
+  .menu li:hover {
+    background-color: deepPink;
+  }
+  
+  /*这里定义了二级菜单出现的位置和宽度大小*/
+  li ul {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 150px;
+    display: none; /*二级菜单默认是不可见的*/
+    z-index: 1;
+  }
+  
+  /*这里定义了二级菜单的子项的宽度*/
+  li ul li {
+    width: 100%;
+  }
+  
+  li:hover ul {
+    display: block; /*当鼠标放到一级菜单上的li时为li下的ul标签也就是二级菜单附加类，使其能够显示*/
+  }
+  
+  /*用伪类：after 在导航栏菜单加载完成之后，在含有has-submenu这个类的li标签的内容后加上以下内容*/
+  li.has-submenu:after {
+    content: "\25bc"; /*这是一个倒三角▼*/
+    font-size: 0.7em; /*设置了三角的大小*/
+    padding-left: 5px;
+    vertical-align: middle; /*设置元素的垂直对齐方式为垂直居中*/
+  }
+  
+  /*当二级菜单被触发显示后，将倒三角替换成正三角*/
+  li.has-submenu:hover:after {
+    content: "\25b2";
+  } 
+  
